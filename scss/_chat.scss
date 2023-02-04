@@ -10,7 +10,7 @@
     align-items: center;
     height: 60px;
     background: $main-color;
-    color: whitesmoke;
+    color: white;
     padding: 0 16px;
     font-size: 20px;
     font-weight: bold;
@@ -40,6 +40,7 @@
         @include user-photo(32px, $color-gray);
       }
     }
+
     .chat_bubble {
       @include chat-box(50px, 200px, 8px);
       position: relative;
@@ -73,13 +74,13 @@
     }
 
     .chat_bubble {
-      background: whitesmoke;
+      background: white;
 
       &::before {
         left: initial;
         right: -10px;
         transform: scaleX(-1);
-        border-right: 10px solid whitesmoke;
+        border-right: 10px solid white;
       }
     }
   }
@@ -87,7 +88,7 @@
 
 .chat_form {
   @include chat-box(60px, 100%);
-  background: #ffffff;
+  background: white;
   padding: 10px;
 
   .chat_form-plugin {
@@ -106,6 +107,7 @@
       font-size: 20px;
     }
   }
+
   .chat_form-field {
     width: 100%;
     display: flex;
@@ -126,13 +128,14 @@
       }
     }
   }
+
   .chat_form-btn {
     @include chat-box(40px, 20%, 8px);
     cursor: pointer;
     border: none;
     outline: none;
     background: $sub-color;
-    color: whitesmoke;
+    color: white;
     font-size: 16px;
     font-weight: bold;
     transition: background 300ms;

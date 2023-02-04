@@ -55,10 +55,11 @@
         border-bottom-right-radius: 5px;
       }
     }
+
     .login_form_btn {
       cursor: pointer;
       background: $sub-color;
-      color: #fff;
+      color: white;
       font-size: 16px;
       font-weight: bold;
       border-radius: 5px;
@@ -66,7 +67,7 @@
       transition: all 300ms;
 
       &:hover {
-        background: #fff;
+        background: white;
         color: $sub-color;
         border: 1px solid $sub-color;
       }
@@ -81,7 +82,7 @@
     .login_check_label {
       cursor: pointer;
       vertical-align: middle;
-      color: #fff;
+      color: white;
     }
   }
 }

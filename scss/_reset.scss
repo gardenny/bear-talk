@@ -1,9 +1,12 @@
+// Font
 @font-face {
   font-family: 'Pretendard-Regular';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
+
+// Global
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +23,12 @@ body {
   height: 100%;
   margin: auto;
   accent-color: $sub-color;
+  user-select: none;
 }
 section {
   height: 100%;
   background: whitesmoke;
+  border-right: 1px solid $main-color;
 }
 input:not([type='checkbox']) {
   appearance: none;
@@ -32,7 +37,7 @@ input:not([type='checkbox']) {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: whitesmoke;
 }
 li {
   list-style: none;
