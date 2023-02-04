@@ -6,6 +6,11 @@ const textInput = document.querySelector('.chat_form-msg');
 
 chatForm.addEventListener('submit', e => {
   e.preventDefault();
+  if (textInput.value.trim() === '') {
+    alert('메시지 내용을 입력해주세요.');
+    textInput.value = '';
+    return;
+  }
 
   const newMsg = document.createElement('li');
   newMsg.setAttribute('class', 'chat_content right');
