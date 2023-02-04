@@ -1,3 +1,4 @@
+// Chat
 .chat {
   @include chat-box(100%, 100%);
 
@@ -10,7 +11,7 @@
     align-items: center;
     height: 60px;
     background: $main-color;
-    color: white;
+    color: $color-white;
     padding: 0 16px;
     font-size: 20px;
     font-weight: bold;
@@ -22,6 +23,7 @@
   }
 }
 
+// Screen
 .chat_screen {
   @include chat-box(calc(100% - 120px), 100%);
   background: $main-color;
@@ -74,21 +76,22 @@
     }
 
     .chat_bubble {
-      background: white;
+      background: $color-white;
 
       &::before {
         left: initial;
         right: -10px;
         transform: scaleX(-1);
-        border-right: 10px solid white;
+        border-right: 10px solid $color-white;
       }
     }
   }
 }
 
+// Form
 .chat_form {
   @include chat-box(60px, 100%);
-  background: white;
+  background: $color-white;
   padding: 10px;
 
   .chat_form-plugin {
@@ -135,7 +138,7 @@
     border: none;
     outline: none;
     background: $sub-color;
-    color: white;
+    color: $color-white;
     font-size: 16px;
     font-weight: bold;
     transition: background 300ms;
@@ -146,6 +149,7 @@
   }
 }
 
+// Scrollbar
 ::-webkit-scrollbar {
   width: 8px;
 }

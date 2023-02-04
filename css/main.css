@@ -31,7 +31,7 @@ body {
 
 section {
   height: 100%;
-  background: whitesmoke;
+  background: #ffffff;
   border-right: 1px solid #3b3954;
 }
 
@@ -43,7 +43,7 @@ input:not([type=checkbox]) {
 
 a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #ffffff;
 }
 
 li {
@@ -170,7 +170,7 @@ li {
 .login_container .login_form .login_form_btn {
   cursor: pointer;
   background: #aeb5d1;
-  color: white;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
@@ -178,7 +178,7 @@ li {
   transition: all 300ms;
 }
 .login_container .login_form .login_form_btn:hover {
-  background: white;
+  background: #ffffff;
   color: #aeb5d1;
   border: 1px solid #aeb5d1;
 }
@@ -191,7 +191,7 @@ li {
 .login_container .login_form .login_check_label {
   cursor: pointer;
   vertical-align: middle;
-  color: white;
+  color: #ffffff;
 }
 
 .sub {
@@ -276,7 +276,7 @@ li {
   align-items: center;
   height: 60px;
   background: #3b3954;
-  color: white;
+  color: #ffffff;
   padding: 0 16px;
   font-size: 20px;
   font-weight: bold;
@@ -346,20 +346,20 @@ li {
   display: none;
 }
 .chat_screen .right .chat_bubble {
-  background: white;
+  background: #ffffff;
 }
 .chat_screen .right .chat_bubble::before {
   left: initial;
   right: -10px;
   transform: scaleX(-1);
-  border-right: 10px solid white;
+  border-right: 10px solid #ffffff;
 }
 
 .chat_form {
   height: 60px;
   width: 100%;
   border-radius: 0;
-  background: white;
+  background: #ffffff;
   padding: 10px;
 }
 .chat_form .chat_form-plugin {
@@ -407,7 +407,7 @@ li {
   border: none;
   outline: none;
   background: #aeb5d1;
-  color: white;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   transition: background 300ms;

@@ -27,7 +27,7 @@ body {
 }
 section {
   height: 100%;
-  background: whitesmoke;
+  background: $color-white;
   border-right: 1px solid $main-color;
 }
 input:not([type='checkbox']) {
@@ -37,7 +37,7 @@ input:not([type='checkbox']) {
 }
 a {
   text-decoration: none;
-  color: whitesmoke;
+  color: $color-white;
 }
 li {
   list-style: none;
