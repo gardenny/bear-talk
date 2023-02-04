@@ -19,6 +19,7 @@ chatForm.addEventListener('submit', e => {
     <div class="chat_bubble">${textInput.value}</div>`;
 
   chatScreen.appendChild(newMsg);
+  newMsg.scrollIntoView({ block: 'center' });
   textInput.value = '';
   textInput.focus();
 });
