@@ -1,0 +1,60 @@
+.navbar {
+  @include chat-box(100%, 60px);
+  position: fixed;
+  background: $main-color;
+  padding-top: 50px;
+
+  .navbar_list {
+    .navbar_btn {
+      padding: 15px 0;
+      text-align: center;
+      color: $color-gray;
+      transition: color 300ms;
+      cursor: pointer;
+
+      &.active {
+        color: $sub-color;
+      }
+      &:hover {
+        color: $sub-color;
+      }
+      &:last-child {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: $sub-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+
+  .header_title {
+    font-size: 24px;
+  }
+  .header_menu {
+    span {
+      @include chat-box(36px, 36px, 18px);
+      display: inline-block;
+      text-align: center;
+      line-height: 36px;
+      color: $main-color;
+      transition: all 300ms;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-light-gray;
+      }
+    }
+  }
+}
