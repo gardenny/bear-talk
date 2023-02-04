@@ -1,0 +1,20 @@
+$main-color: #3b3954;
+$sub-color: #aeb5d1;
+$color-gray: #a1a1a1;
+$color-light-gray: #e9e9e9;
+
+@mixin chat-box($box-height, $box-width: 100%, $box-border_radius: 0) {
+  height: $box-height;
+  width: $box-width;
+  border-radius: $box-border_radius;
+}
+@mixin user-box() {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: $color-light-gray;
+}
+@mixin user-photo($size: initial, $color: initial) {
+  font-size: $size;
+  color: $color;
+}
