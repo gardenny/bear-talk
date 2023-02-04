@@ -1,4 +1,4 @@
-![beartalk](https://user-images.githubusercontent.com/110226567/216778023-6098703b-c8b0-4495-9e59-77a2ed3291de.png)
+![beartalk](https://user-images.githubusercontent.com/110226567/216779047-26492282-58ae-47d0-a7bc-48532d2b1007.png)
 
 # 🐻 BearTalk
 
