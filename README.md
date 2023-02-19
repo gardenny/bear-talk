@@ -3,54 +3,82 @@
 # 🐻 BearTalk
 
 모바일 채팅엡 UI 구현 사이트 👉 [Demo](https://imjone.github.io/bear-talk/)
-<br><br>
 
-## 📢 프로젝트 소개
+<br />
 
-### [채팅앱 UI 사이트, 베어톡]
+## 📢 프로젝트 개요
 
-- PC 카카오톡 디자인을 참고하여 채팅 어플 UI 구현
-- SCSS 문법을 사용하여 빠르고 효율적인 스타일링
-- 채팅 내용 확인 및 간단한 메시지 전송 기능
-<br><br>
+저의 최종 목표 중 하나가 바로 채팅 어플리케이션 개발이었습니다.<br />
+아직 서버에 대한 지식은 없기에, UI적인 부분만이라도 만들어보고 싶었습니다.<br />
+PC 카카오톡 디자인을 참고하였으며, SCSS 문법을 통해 빠르게 스타일링하였습니다.
+
+<br />
 
 ## 🗨️ 사용 기술
 
-<div>
+<p>
   <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>
   <img src="https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=Sass&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=JavaScript&logoColor=white"/>
-</div>
-<br>
+</p>
+
+<br />
 
 ## 📋 주요 기능
 
-### 1. 로그인 페이지
+- 아이디와 비밀번호를 입력할 수 있는 로그인폼
+- 채팅 내용 및 상대 프로필 미리보기 페이지
+- 채팅방 내 간단한 메시지 전송 기능
 
-- 아이디와 비밀번호를 입력할 수 있는 로그인폼 구현
-- 메인 컬러와 서브 컬러를 적절히 활용하여 디자인 구성
+<br />
 
-### 2. 채팅 목록 페이지
+## 💻 소스 코드
 
-- 상대방의 프로필과 채팅 내용을 미리 볼 수 있는 페이지
-- 채팅 내용이 길어질 시 말 줄임 표시로 대체
+전체 코드 보러 가기 👉 [Notion](https://www.notion.so/imjone/BearTalk-31aa513be24941818f2ee5c65ec71eef?pvs=4)
 
-### 3.  채팅방 페이지
+### 📍 메시지 전송
 
-- 상대방과의 전체 채팅 내용을 확인해볼 수 있는 페이지
-- 전송 버튼 클릭 혹은 Enter키를 입력하여 메시지 전송
-<br><br>
+`createElement` 메소드를 통해 새로운 DOM 요소를 생성한 후,<br />
+채팅방 내 자식 요소로 추가하여 메시지 전송 효과를 구현하였습니다.
 
-## 😊 나의 회고록
+```javascript
+const chatScreen = document.querySelector('.chat_screen');
+const textInput = document.querySelector('.chat_form-msg');
 
-### 💧 어려웠던 점 및 개선 사항
+const newMsg = document.createElement('li');
+newMsg.setAttribute('class', 'chat_content right');
+newMsg.innerHTML = `
+  <div class="chat_photo"></div>
+  <div class="chat_bubble">${textInput.value}</div>`;
 
-구현 과정은 재미있었지만, 결과물만 놓고 봤을 때는 정적인 사이트라 그런지 다소 심심한 감이 없지 않아 있는 듯하다.
-이번 프로젝트는 이렇게 마무리해두고, 차후에 프로필 관리 및 친구 추가, 실시간 채팅 등의
-더욱 다양하고 동적인 기능들까지 추가하여 정말 채팅’앱’이라고 부를 수 있을 만큼 완성도를 높여보고 싶다.
+chatScreen.appendChild(newMsg);
+newMsg.scrollIntoView({ block: 'center' });
+textInput.value = '';
+textInput.focus();
+```
 
-### 🔥 배운 점 및 느낀 점
+### 📍 유효성 검사
 
-SCSS 문법을 사용하니 확실히 작업 능률이 높았다. 빠르고 효율적인 스타일링은 물론,
-변수와 mixin 등을 통해 같은 스타일을 반복하여 작성하지 않고 재사용할 수 있다는 점이 정말 매력적으로 느껴졌다.
-앞으로도 다양한 도구들을 무리 없이 활용할 수 있도록 계속해서 경험해보고, 숙련도를 쌓아나가는 과정이 필요할 것 같다.
+`submit` 이벤트 발생 시 간단한 유효성을 검사를 진행하며,<br />
+메시지창에 입력된 텍스트가 공백 뿐일 경우 알림창을 띄웁니다.
+
+```javascript
+const chatForm = document.querySelector('.chat_form');
+
+chatForm.addEventListener('submit', e => {
+  e.preventDefault();
+  if (textInput.value.trim() === '') {
+    alert('메시지 내용을 입력해주세요.');
+    textInput.value = '';
+    return;
+  }
+});
+```
+
+<br />
+
+## 😊 배운 점 및 느낀 점
+
+- 빠르고 효율적인 스타일링이 가능한 SCSS 문법의 매력을 느꼈습니다.
+- 더욱 다양하고 사실적인 UI 요소 및 기능 구현에 대한 아쉬움이 많이 남습니다.
+- 원하는 기능을 어떤 식으로 구현할 수 있을지 고민하며 탐구력을 기를 수 있었습니다.
