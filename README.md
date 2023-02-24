@@ -34,7 +34,7 @@ PC 카카오톡 디자인을 참고하였으며, SCSS 문법을 통해 빠르게
 
 ## 💻 소스 코드
 
-전체 코드 보러 가기 👉 [Notion](https://www.notion.so/imjone/BearTalk-31aa513be24941818f2ee5c65ec71eef?pvs=4)
+전체 코드 보러 가기 👉 [Notion](https://imjone.notion.site/BearTalk-31aa513be24941818f2ee5c65ec71eef)
 
 ### 📍 메시지 전송
 
