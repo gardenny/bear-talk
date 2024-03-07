@@ -2,7 +2,7 @@
 
 # 🐻 BearTalk
 
-모바일 채팅엡 UI 구현 사이트 👉 [Demo](https://imjone.github.io/bear-talk/)
+모바일 채팅엡 UI 구현 사이트 👉 [Demo](https://gardenny.github.io/bear-talk/)
 
 <br />
 
@@ -34,7 +34,7 @@ PC 카카오톡 디자인을 참고하였으며, SCSS 문법을 통해 빠르게
 
 ## 💻 소스 코드
 
-전체 코드 보러 가기 👉 [Notion](https://imjone.notion.site/BearTalk-31aa513be24941818f2ee5c65ec71eef)
+전체 코드 보러 가기 👉 [Notion](https://imjone.notion.site/BearTalk-31aa513be24941818f2ee5c65ec71eef?pvs=4)
 
 ### 📍 메시지 전송
 
